@@ -1,0 +1,73 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+
+
+
+
+def resumepage(request):
+    full_name = request.GET.get('Full Name', 'default')
+    DOB = request.GET.get('DOB', 'default')
+    Contact = request.GET.get('Contact', 'default')
+    Email = request.GET.get('Email', 'default')
+    SocialMedia = request.GET.get('SocialMedia', 'default')
+    objective = request.GET.get('objective', 'default')
+    PI_head = request.GET.get('PI_head', 'default')
+    projectname = request.GET.get('projectname', 'default')
+    duration_start = request.GET.get('duration_start', 'default')
+    duration_end = request.GET.get('duration_end', 'default')
+    project_detail1 = request.GET.get('project_detail1', 'default')
+    project_detail2 = request.GET.get('project_detail2', 'default')
+    PI_head2 = request.GET.get('PI_head2', 'default')
+    projectname2 = request.GET.get('projectname2', 'default')
+    duration_start2 = request.GET.get('duration_start2', 'default')
+    duration_end2 = request.GET.get('duration_end2', 'default')
+    project_detail3 = request.GET.get('project_detail3', 'default')
+    project_detail4 = request.GET.get('project_detail4', 'default')
+    graduation = request.GET.get('graduation', 'default')
+    cgpa = request.GET.get('cgpa', 'default')
+    HigherSecondary = request.GET.get('HigherSecondary', 'default')
+    percentage_marks = request.GET.get('percentage_marks', 'default')
+    skill1 = request.GET.get('skill1', 'default')
+    skill2 = request.GET.get('skill2', 'default')
+    skill3 = request.GET.get('skill3', 'default')
+    award1 = request.GET.get('Award1', 'default')
+    prize_position = request.GET.get('prize_position', 'default')
+    prize_year = request.GET.get('prize_year', 'default')
+
+    params = {
+        'full_name': full_name,
+        'DOB': DOB,
+        'Contact': Contact,
+        'Email': Email,
+        'SocialMedia': SocialMedia,
+        'objective': objective,
+        'PI_head' : PI_head,
+        'projectname': projectname,
+        'duration_start':  duration_start,
+        'duration_end':duration_end,
+        'project_detail1':project_detail1,
+        'project_detail2':project_detail2,
+        'PI_head2': PI_head2,
+        'projectname2': projectname2,
+        'duration_start2': duration_start2,
+        'duration_end2':duration_end2,
+        'project_detail3':project_detail3,
+        'project_detail4':project_detail4,
+        'graduation':  graduation,
+        'cgpa': cgpa,
+        'HigherSecondary':HigherSecondary,
+        'percentage_marks': percentage_marks,
+        'skill1':skill1,
+        'skill2':skill2,
+        'skill3':skill3,
+        'award1':award1,
+        'prize_position': prize_position,
+        'prize_year':prize_year
+    }
+    return render(request, 'resumepage.html', params)
+    
+
+# Create your views here.
+def index(request):
+    return render(request, 'index.html')
+
