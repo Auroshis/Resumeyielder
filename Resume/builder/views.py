@@ -1,6 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+def index(request):
+    return render(request, 'index.html')
+
+def frontpage(request):
+    return render(request,'frontpage.html')
 
 
 
@@ -33,7 +38,9 @@ def resumepage(request):
     award1 = request.GET.get('Award1', 'default')
     prize_position = request.GET.get('prize_position', 'default')
     prize_year = request.GET.get('prize_year', 'default')
-
+    option = request.GET.get('option', 'default')
+    language1 = request.GET.get('language1','default')
+    language2 = request.GET.get('language2','default')
     params = {
         'full_name': full_name,
         'DOB': DOB,
@@ -62,12 +69,13 @@ def resumepage(request):
         'skill3':skill3,
         'award1':award1,
         'prize_position': prize_position,
-        'prize_year':prize_year
+        'prize_year':prize_year,
+        'language1': language1,
+        'language2': language2
     }
-    return render(request, 'resumepage.html', params)
-    
-
-# Create your views here.
-def index(request):
-    return render(request, 'index.html')
-
+    if(option == '1'):
+        return render(request, 'resumepage.html', params)
+    elif(option == '2'):
+        return render(request, 'resumepage1.html', params)
+    else:
+        return HttpResponse("wrong choice!Go back")
