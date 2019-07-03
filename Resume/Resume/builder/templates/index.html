@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+
+<form action="/builder/resumepage" method="get">
+  <div class="container">
+    <h1>Please fill your Details</h1>
+    <hr>
+
+    <label for="Full Name"><b>Full Name</b></label>
+    <input type="text" placeholder="Enter Name" name="Full Name" required>
+
+    <label for="DOB"><b>Date of Birth</b></label>
+    <input type="date" placeholder="Enter DOB" name="DOB" required>
+     <br><br>
+     <label for="credential"><b>Enter yout current credential</b></label>
+    <input type="text" placeholder="Enter credential" name="credential" required>
+
+    <label for="skill1"><b>Skill1</b></label>
+    <input type="text" placeholder="Enter Skill" name="skill1" required>
+
+    <label for="skill2"><b>Skill2</b></label>
+    <input type="text" placeholder="Enter Skill" name="skill2" required>
+
+    <label for="skill3"><b>Skill3</b></label>
+    <input type="text" placeholder="Enter Skill" name="skill3" required>
+    <br><hr>
+    <label for="PI_head"><b>Enter Project/Internship Head</b></label>
+    <input type="text" placeholder="Enter Head" name="PI_head" required>
+
+    <label for="projectname"><b>Enter Project/Internship Name</b></label>
+    <input type="text" placeholder="Enter Name" name="projectname" required>
+
+    <label for="duration_start"><b>Enter start date</b></label>
+    <input type="date" placeholder="Enter start date" name="duration_start" required>
+
+    <label for="duration_end"><b>Enter end date</b></label>
+    <input type="date" placeholder="Enter end date" name="duration_end" required>
+     <br><br>
+    <label for="project_detail1"><b>Enter Project/Internship detail</b></label>
+    <input type="text" placeholder="Enter project/internship detail line1" name="project_detail1" required>
+
+    <label for="project_detail2"><b>Enter Project/Internship detail</b></label>
+    <input type="text" placeholder="Enter project/internship detail line2" name="project_detail2" required>
+    <br><hr>
+    <label for="PI_head2"><b>Enter Project/Internship Head</b></label>
+    <input type="text" placeholder="Enter Head" name="PI_head2" required>
+
+    <label for="projectname2"><b>Enter Project/Internship Name</b></label>
+    <input type="text" placeholder="Enter Name" name="projectname2" required>
+
+    <label for="duration_start2"><b>Enter start date</b></label>
+    <input type="date" placeholder="Enter start date" name="duration_start2" required>
+
+    <label for="duration_end2"><b>Enter end date</b></label>
+    <input type="date" placeholder="Enter end date" name="duration_end2" required>
+     <br><br>
+    <label for="project_detail3"><b>Enter Project/Internship detail</b></label>
+    <input type="text" placeholder="Enter project/internship detail line1" name="project_detail3" required>
+
+    <label for="project_detail4"><b>Enter Project/Internship detail</b></label>
+    <input type="text" placeholder="Enter project/internship detail line2" name="project_detail4" required>
+    <br><br>
+    <label for="Award1"><b>Award</b></label>
+    <input type="text" placeholder="Award" name="Award1" required>
+
+    <label for="prize_position"><b>Prize Position</b></label>
+    <input type="text" placeholder="position" name="prize_position" required>
+
+    <label for="prize_year"><b>Prize Year</b></label>
+    <input type="text" placeholder="year" name="prize_year" required>
+    <br><br>
+    <label for="Graduation"><b>Graduation Institution</b></label>
+    <input type="text" placeholder="graduation" name="graduation" required>
+
+    <label for="HigherSecondary"><b>Higher Secondary Institution</b></label>
+    <input type="text" placeholder="Higher Secondary" name="HigherSecondary" required>
+
+    <label for="cgpa"><b>CGPA in Graduation</b></label>
+    <input type="text" placeholder="cgpa" name="cgpa" required>
+    
+    <label for="percentage_marks"><b>percentage in higher secondary</b></label>
+    <input type="text" placeholder="percentage_marks" name="percentage_marks" required>
+    <br><br>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Email" name="Email" required>
+    <br>
+    <label for="Contact"><b>Contact</b></label>
+    <input type="Contact" placeholder="Contact" name="Contact" required>
+    <br><br>
+    <label for="objective"><b>objective</b></label>
+    <input type="text" placeholder="objective" name="objective" required>
+
+    <label for="SocialMedia"><b>Social Media</b></label>
+    <input type="text" placeholder="Social Media" name="SocialMedia" required>
+    
+    <label for="language1"><b>Enter Language1</b></label>
+    <input type="text" placeholder="Enter Language" name="language1" required>
+    
+    <label for="language2"><b>Enter Language2</b></label>
+    <input type="text" placeholder="Enter Language" name="language2" required>
+    
+    <label for="option"><b>Template Option</b></label>
+    <input type="text" placeholder="Enter Template option in number" name="option" required>
+
+    <button type="submit" class="registerbtn">Submit</button></a>
+  </div>
+  
+
+</form>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
